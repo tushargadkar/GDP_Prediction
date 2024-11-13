@@ -1,0 +1,64 @@
+<!-- gdp_predictor/templates/gdp_predictor/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total GDP Prediction</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+
+        img {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin: 0 10px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Total GDP Prediction</h1>
+
+    <h2>Actual Total GDP Values:</h2>
+    <ul>
+        {% for value in actual_total_gdp %}
+        <li>{{ value }} cr</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Predicted Total GDP Values:</h2>
+    <ul>
+        {% for value in predicted_total_gdp %}
+        <li>{{ value }} cr</li>
+        {% endfor %}
+    </ul>
+
+    <img src="{{ plot_url }}" alt="Total GDP Prediction Plot">
+
+</body>
+
+</html>
