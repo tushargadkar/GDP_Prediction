@@ -1,3 +1,5 @@
+PROJECT LIVE LINK : - https://radical-corenda-tushargroup-8bef5bdf.koyeb.app/
+
 FINAL YEAR PROJECT : - "GDP Growth Prediction of India Using ML Algorithm".
 
 Our project, "GDP Growth Prediction of India Using Machine Learning Algorithm," focuses on developing a predictive model for India's GDP growth using the linear regression model. By integrating diverse data sources, including socioeconomic indicators, industry trends, and global economic factors, we enhance the prediction accuracy.
